@@ -23,3 +23,5 @@ usermod -a -G docker jenkins
 systemctl start jenkins
 echo "5. Jenkins password:"
 cat /var/lib/jenkins/secrets/initialAdminPassword
+echo "Final: remove ec2-setup folder"
+rm -rf /home/ubuntu/ec2-setup
